@@ -1,0 +1,93 @@
+:root {
+  --serif: "EB Garamond", serif;
+  --sans-serif: "Montserrat", sans-serif;
+  --strive-primary: #00ff84;
+
+  --small-size: 0.85rem;
+  --normal-size: 1rem;
+  --bigger-size: 1.4rem;
+}
+
+body {
+  color: white;
+  background-color: rgb(44, 44, 44);
+  font-family: var(--sans-serif);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--serif);
+}
+
+.bg-strive {
+  background-color: var(--strive-primary);
+}
+
+.navbar {
+  padding: 2rem 4rem 0;
+}
+
+header {
+  background-image: url(../smile.jpg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 25%);
+}
+
+.hero {
+  /* --strive-primary: red; */
+}
+
+.hero h1 {
+  font-size: 56px;
+  line-height: 1;
+}
+
+.hero h1 + p {
+  font-size: 1.4rem;
+}
+
+.hero button.btn {
+  padding: 0.75rem 4rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.about-us {
+  background-color: rgb(0 0 0 / 70%);
+  position: relative;
+}
+
+.about-us .slash {
+  color: var(--strive-primary);
+}
+
+.about-us h4 {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.about-us p {
+  font-weight: 500;
+}
+
+footer {
+  background-color: black;
+  height: 200vh;
+}
